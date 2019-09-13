@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Save Tab URLs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Save open tabs to markdown",
   "icons": {
     "16": "icons/icon16.png",
