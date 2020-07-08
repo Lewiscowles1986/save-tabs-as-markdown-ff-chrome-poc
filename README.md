@@ -7,6 +7,7 @@ A Browser addon for FireFox & Chrome to save active tabs as Markdown
 
 * [Chrome Web Store](https://chrome.google.com/webstore/detail/save-tab-urls/ongnhfbnfbpfpcmnjahklmklncjblmmo)
 * [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/save-tab-urls-to-markdown/)
+* [Microsoft Edge (chromium) Add-ons](https://microsoftedge.microsoft.com/addons/detail/save-tab-urls/kpgnncjnhfgcjplbhapbdhnfgoglajof)
 
 ## Usage
 
