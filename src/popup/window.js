@@ -2,7 +2,6 @@ const saveBtn = document.querySelector('.save'),
   urlText = document.querySelector('.urlText');
 
 function listTabs() {
-  const browserAPI = (typeof browser == "object") ? browser : chrome;
   try {
     const browserApi = typeof browser === 'object' ? browser : chrome;
 
