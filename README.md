@@ -1,7 +1,14 @@
 ![The icon is of paper with a + symbol in the bottom right](src/icons/icon.png)
 
 # save-tabs-as-markdown-ff-chrome-poc
-A Browser addon for FireFox & Chrome to save active tabs as Markdown
+A Browser addon for FireFox & Chrome to save active tabs as Markdown.
+
+**Upgraded to Manifest V3** for modern browser compatibility and enhanced security.
+
+## Privacy & Data Ownership
+This extension is built for one purpose: **for you to save your own damn data.**
+We collect zero data. Everything stays on your machine.
+See our [Privacy Policy](PRIVACY.md) for more details.
 
 ## Download from public
 
