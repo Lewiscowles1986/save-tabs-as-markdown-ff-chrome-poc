@@ -1,7 +1,7 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Save Tab URLs",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Save open tabs to markdown",
   "author": "LewisCowles <codesign2@icloud.com>",
   "icons": {
@@ -15,39 +15,11 @@
   "permissions": [
     "activeTab",
     "contextMenus",
-    "tabs",
-    "<all_urls>"
+    "tabs"
   ],
-  "browser_action": {
+  "action": {
     "default_icon": "icons/icon.png",
     "default_title": "Save URLs",
-    "default_popup": "popup/window.html",  
-    "theme_icons": [
-      {
-        "light": "icons/icon16.png",
-        "dark": "icons/icon16-dark.png",
-        "size": 16
-      },
-      {
-        "light": "icons/icon32.png",
-        "dark": "icons/icon32-dark.png",
-        "size": 32
-      },
-      {
-        "light": "icons/icon48.png",
-        "dark": "icons/icon48-dark.png",
-        "size": 48
-      },
-      {
-        "light": "icons/icon96.png",
-        "dark": "icons/icon96-dark.png",
-        "size": 96
-      },
-      {
-        "light": "icons/icon.png",
-        "dark": "icons/icon-dark.png",
-        "size": 128
-      }
-    ]
+    "default_popup": "popup/window.html"
   }
 }

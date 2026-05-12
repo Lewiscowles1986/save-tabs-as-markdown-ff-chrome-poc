@@ -35,10 +35,11 @@ function save() {
 
 function setIcon() {
   const browserAPI = (typeof browser == "object") ? browser : chrome;
+  const action = browserAPI.action || browserAPI.browserAction;
   if (matchMedia('(prefers-color-scheme: dark)').matches) {
-    browserAPI.browserAction.setIcon({ 'path' : '/icons/icon32-dark.png'});
+    action.setIcon({ 'path' : '/icons/icon32-dark.png'});
   } else {
-    browserAPI.browserAction.setIcon({ 'path' : '/icons/icon32.png'});
+    action.setIcon({ 'path' : '/icons/icon32.png'});
   }
 };
 
