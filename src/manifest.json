@@ -9,7 +9,7 @@
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "96": "icons/icon96.png",
-    "128": "icons/icon.png"
+    "128": "icons/icon.svg"
   },
   "homepage_url": "https://lewiscowles.co.uk",
   "permissions": [
@@ -18,8 +18,15 @@
     "tabs"
   ],
   "action": {
-    "default_icon": "icons/icon.png",
+    "default_icon": "icons/icon.svg",
     "default_title": "Save URLs",
-    "default_popup": "popup/window.html"
+    "default_popup": "popup/window.html",
+    "theme_icons": [
+      {
+        "light": "icons/icon32.png",
+        "dark": "icons/icon32-dark.png",
+        "size": 32
+      }
+    ]
   }
 }
