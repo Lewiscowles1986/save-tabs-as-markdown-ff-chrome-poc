@@ -1,18 +1,17 @@
 const saveBtn = document.querySelector('.save'),
   urlText = document.querySelector('.urlText');
 
-function listTabs() {
+async function listTabs() {
   try {
     const browserApi = typeof browser === 'object' ? browser : chrome;
+    const tabs = await browserApi.tabs.query({ currentWindow: true });
 
-    browserApi.tabs.query({ currentWindow: true }, tabs => {
-      let urls = '';
-      for (let tab of tabs) {
-        urls += `* [${tab.title}](${tab.url})\n`;
-      }
-      urlText.value = urls;
-    });
+    urlText.value = tabs
+      .map(tab => `* [${tab.title}](${tab.url})`)
+      .join('\n');
+
   } catch (exception) {
+    console.error(exception);
     alert("The extension couldn't be loaded.");
   }
 }
