@@ -32,17 +32,5 @@ function save() {
   dl.click();
 }
 
-function setIcon() {
-  const browserAPI = (typeof browser == "object") ? browser : chrome;
-  const action = browserAPI.action || browserAPI.browserAction;
-  if (matchMedia('(prefers-color-scheme: dark)').matches) {
-    action.setIcon({ 'path' : '/icons/icon32-dark.png'});
-  } else {
-    action.setIcon({ 'path' : '/icons/icon32.png'});
-  }
-};
-
 document.addEventListener('DOMContentLoaded', listTabs);
 saveBtn.addEventListener('click', save);
-document.addEventListener('DOMContentLoaded', setIcon);
-setIcon();
